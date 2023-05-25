@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist\css\bootstrap.css">
+
+  <title>DS-DigiSec</title>
+  <link rel="icon" href="img/favicon.png" type="image/icon type">
+
+
+</head>
+
+<body style="background-color: #f7f8f8;">
+
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col">
+        <a href="http://ds-digisec.infinityfreeapp.com/">
+          <img src="img\logo.png" alt="No found" height="107">
+        </a>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="container-fluid " style="background-color:red; height: 47px;">
+    <div class="container">
+      <div class="position-relative">
+        <div class="position-absolute end-0 bottom-0">
+
+
+          <div class="topnav">
+            <a href="http://ds-digisec.infinityfreeapp.com/" class="active">Deutsch</a>
+            <a href="english/Index.html">English</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-xxl">
+      <ul class="nav nav-tabs justify-content-end " id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" onclick="window.location.href='Über-uns.html'" id="home-tab" data-bs-toggle="tab"
+            data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="false">ÜBER UNS</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link " onclick="window.location.href='leistungen.html'" id="profile-tab"
+            data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+            aria-selected="false">LEISTUNGEN</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link  " onclick="window.location.href='karriere.html'" id="contact-tab"
+            data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact"
+            aria-selected="false">KARRIERE</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" onclick="window.location.href='kontakt.html'" id="help-tab"
+            data-bs-toggle="tab" data-bs-target="#help" type="button" role="tab" aria-controls="help"
+            aria-selected="false">KONTAKT</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-1">&nbsp</div>
+        <div class="col col-md-9 text-start mx-auto ">
+          <br><br>
+          <p>
+          <h1><strong>KONTAKT</strong><br>
+            <strong>D&S DIGISEC GMBH</strong>
+          </h1>
+          </p>
+          <hr>
+          <img src="img-kontakt/image.png" class="w-100 d-block" alt="...">
+
+          <p>Nutzen Sie mit das folgende Formular und wir nehmen den persönlich en Kontakt mit Ihnen auf. Schildern Sie
+            uns gerne bereits in einer kurzen Nachricht Ihr Anliegen - Ob Informationen zu unseren Leistungen oder
+            konkrete Anfragen in Sachen IT-Security: Wir sind für Sie da.</p>
+          <p>Alternativ können Sie uns auch direkt eine E-Mail an <a href="mailto:hilfe@ds-digisec.com"
+              style="text-decoration: none;  color:crimson"> hilfe@ds-digisec.com</a> zukommen lassen.</p>
+
+          <div>
+            <form 
+            method="post" action="send-email-kontakt.php"
+            >
+
+              <div class="mb-3 row">
+                <label for="inputFirma" class="col-sm-2 col-form-label">Firma</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" name="firma" id="inputFirma" style="border-radius: 0%; ">
+                </div>
+              </div>
+
+              <div class="mb-3 row">
+                <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" name="name" id="inputName" style="border-radius: 0%; ">
+                </div>
+              </div>
+
+              <div class="mb-3 row">
+                <label for="inputVorname" class="col-sm-2 col-form-label">Vorname</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" name="vorname" id="inputVorname" style="border-radius: 0%;">
+                </div>
+              </div>
+
+              <div class="mb-3 row">
+                <label for="inputStadt" class="col-sm-2 col-form-label">Stadt</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" name="stadt" id="inputStadt" style="border-radius: 0%; ">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="chooseOption" class="col-sm-2 col-form-label">Ich bitte um Kontaktaufnahme per:</label>
+                <div class="col-sm-5">
+                  <select class="form-select form-select-sm" name="contact" aria-label=".form-select-sm example">
+
+                    <option value="Telefon">Telefon</option>
+                    <option value="E-Mail">E-Mail</option>
+                  </select>
+                </div>
+
+              </div>
+              <div class="mb-3 row">
+                <label for="inputEmail" class="col-sm-2 col-form-label">E-Mail</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" name="email" id="inputEmail" style="border-radius: 0%; ">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="inputNumber" class="col-sm-2 col-form-label">Telefon</label>
+                <div class="col-sm-10">
+                  <input type="tel" class="form-control" name="number" id="inputNumber" style="border-radius: 0%; ">
+                </div>
+              </div>
+
+
+ 
+              <div class="mb-3 row">
+                <label for="message" class="col-sm-2 col-form-label">Nachricht</label>
+                <div class="col-sm-5">
+                  <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+                </div>
+
+              </div>
+              <div class="mb-3 row">
+                <div class=" col-sm-2">&nbsp</div>
+                <div class="col-sm-5">
+                  <button type="submit" class="btn btn-under-text ">Absenden</button>
+                </div>
+
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid text-center " style="background-color: #6d6e70; padding-right: 0% !important;">
+    <div class="row gx-0 justify-content-md-center">
+      <div class="col col-md-2">
+        <br>
+        <div class="text-start">
+          <p class="fw-bolder">
+          <h3>Contact</h3>
+          </p>
+        </div>
+        <div class="text-start" style="color: #f7f8f8;">
+          <div>
+            D&S DigiSec GmbH
+          </div>
+          <div>
+            Neustraße 1
+          </div>
+          <div>
+            40789 Monheim am Rhein
+          </div>
+          <br>
+          <p>
+            Tel: +49 2173 93 77 570
+          </p>
+          <p>
+            <a href="mailto:hilfe@ds-digisec.com"
+              style="text-decoration: none; color: #f7f8f8;">hilfe@ds-digisec.com</a>
+          </p>
+        </div>
+
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-4 text-start">
+        <br>
+
+        <p class="fw-bolder">
+        <h4>QUICK MESSAGE:</h4>
+        </p>
+        <form
+              method="post" action="send-email.php"
+              >
+          <div class="mb-3">
+            <label for="InputName" class="form-label">Name</label>
+            <input type="text" class="form-control" name="name" id="InputName" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="InputEmail" class="form-label ">E-Mail</label>
+            <input type="email" class="form-control" name="email" id="InputEmail">
+          </div>
+          <div class="mb-3 ">
+            <label for="message">Worum geht es?</label>
+            <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+          </div>
+
+
+
+          <button type="submit" class="btn btn-under-text">Submit</button>
+        </form>
+
+      </div>
+      <div class="col col-md-1"></div>
+      <div class="col col-md-3 text-start">
+        <br>
+        <div>
+          <p>
+          <h3>MEMBER OF: </h3>
+          </p>
+        </div>
+        <div class="w-50  ">
+          <a href="https://www.allianz-fuer-cybersicherheit.de/">
+            <img src="img/botto-img-1.png" alt="..." class="img-fluid">
+          </a>
+
+        </div>
+        <div>
+          <p>
+          <h3>FIND US ON:</h3>
+          </p>
+        </div>
+        <div class="w-50  ">
+          <p>
+            <a href="https://www.xing.com/m/MnvM55thef7PScEfANggAB">
+              <img src="img/botto-img-2.png" alt="..." class="img-fluid">
+            </a>
+          </p>
+
+
+        </div>
+        <div class="w-50  ">
+          <p>
+            <a href="https://www.linkedin.com/company/dsdigisec/">
+              <img src="img/botto-img-3.png" alt="..." class="img-fluid">
+            </a>
+          </p>
+
+
+        </div>
+        <div>
+          <p>
+          <h3>SHARE ON:</h3>
+          </p>
+        </div>
+        <div>
+          <a href="http://www.facebook.com/sharer.php?u=https://www.ds-digisec.com/&t=DEUTSCH" class="icon-sizing"
+            style="text-decoration: none;">
+            <img src="img/facebook_icon.png" alt="..." height="32" width="32">
+          </a>
+          <a href="http://twitter.com/share?text=DEUTSCH&url=https%3A%2F%2Fwww.ds-digisec.com%2F" class="icon-sizing"
+            style="text-decoration: none;">
+            <img src="img/twitter_icon.png" alt="..." height="32" width="32">
+          </a>
+          <a href="mailto:?subject=DEUTSCH&body=https://www.ds-digisec.com/" class="icon-sizing"
+            style="text-decoration: none;">
+            <img src="img/email_icon.png" alt="..." height="30" width="30">
+          </a>
+          <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://www.ds-digisec.com/&title=DEUTSCH"
+            class="icon-sizing" style="text-decoration: none;">
+            <img src="img/linkedin_icon.png" alt="..." height="30" width="30">
+          </a>
+          <a href="https://www.xing.com/social_plugins/share/new?url=https://www.ds-digisec.com/" class="icon-sizing"
+            style="text-decoration: none;">
+            <img src="img/xing_icon.png" alt="..." height="30" width="30">
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <br><br><br>
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>
